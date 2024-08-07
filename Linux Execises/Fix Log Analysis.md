@@ -1,8 +1,11 @@
 # Pre-requsite
 Get the FixGenerator script from the repo
+
 `wget https://github.com/TheAcademy/pss-orderbook-deploy/blob/main/src/linux_activities/fixGenerator.sh`
+
 `chmod +x fixGenerator.sh`
-`./fixGenerator.sh &` - Runs the script and creates a logfile 
+
+`./fixGenerator.sh &` (Runs the script and creates a logfile) 
 
 # Exercise
 1) Create a directory named logs.
