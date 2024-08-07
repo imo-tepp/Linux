@@ -130,3 +130,30 @@ TCP is a connnection oriented protocol, whereas UDP is a connectionless protocol
 - `du` - displays how much storage each file and folder are using
 - `gzip` & `gunzip` - Zips and unzips file with .gz extension
 - `tar`: can create and compress files into an archive or extract them.
+
+## Scheduling Tasks
+Scheduling is used to make sure that a process doesn't start without the proper trigger or data available. There are a few tools that we can use to scheduling tasks, such as:
+- Control-M (Workload automation)
+- Autosys (automated job managment tool)
+- AS400 (Database managment system)
+- Tibco (GUI tool for business process integration)
+- Crontab (Unix command that execute scripts at a specified time or schedule)
+
+### Date in Linux
+By default, the data is displayed like : `Wed Jul 8 12:43:04 BST 2024`.
+- it's useful for dynamic file name generation for files like logs.
+- Possible to do operation on date like : `date +%Y:%m:%d -d "yesterday"`
+- Working with dates is important in automation as it relies on dates and time to trigger certain process.
+
+### Arithmetics in BASH
+- Double brackets (()) are used to arithmetics in linux 
+- `TOTAL=$((1+1))` : it'll perform the calculations and produce the results
+- Alternatively you can use *bc* or *awk* command
+- `echo 1+1 | bc` or `awk -F '{sum+=$57;} END{print sum;}' file.txt`
+
+### Scripting Commands
+- `awk`: Scripting language that manipulates data and reports
+- `sed`: Stream editor that can update files without opening them
+- `tr` : translate or replace characters
+- `cut` : Slice(cut) a line and extract the results 
+- `wc` : Word count command that counts the number of lines, words and characters in the file.
