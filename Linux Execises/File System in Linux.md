@@ -21,14 +21,13 @@
 7) Use the command below to examine what files are in the tar. The output will include a size estimate of each file.
 - `tar -tvf memory.tar`
 8) Now turn the tar into a gzip. Gzip is a tool for compressing a file. We can use it to compress the tar, a common task in Linux.
-- `gzip memory.tar`
-# command below keeps original tar file
-# gzip -c memory.tar > memory.tar.gz
+- `gzip memory.tar` 
+- `gzip -c memory.tar > memory.tar.gz` (command to keep original tar file)
 9) Look at the storage size of the compression and note that it is smaller than the original files.
 - `du . -ha`
 10) Delete the original files and extract the compressed tarball. Look at your disk file usage again.
 - `rm *.txt `
-# rm memory.tar # if you still have this file
+- `rm memory.tar` (if you still have this file)
 - `du . -ha`
 11) Decompress the gzip file with gunzip, and then extract (-x) the tar and examine the size again.
 - `gunzip memory.tar.gz`
