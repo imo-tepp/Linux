@@ -11,7 +11,7 @@ Use the jobs command to view all the jobs running in the background.
 
 After 200 seconds, the job above this job will no longer be in the running status.
 You can send a running job from the foreground to the background with **Ctrl+z**.
-- `sleep 50` #now enter Ctrl+z
+- `sleep 50` (now enter Ctrl+z)
 
 Then view the jobs.
 - `jobs`
@@ -119,9 +119,9 @@ If you are worried about a job taking a long time to execute, consider putting t
 
 ## Job Statuses
 
-*Running* : This status indicates that a job is currently actively running in the foreground or background.
-*Stopped* : A job might be stopped if it was suspended, usually by pressing Ctrl+Z. A stopped job is one that has been paused and is not currently executing.
-*Exited* : When a job completes its execution, it will have an "Exited" status. This means that the process associated with the job has finished running.
-*Terminated* : A job might have a "Terminated" status if it was forcefully terminated, usually by sending a termination signal (like Ctrl+C).
-*Background* : This status indicates that a job is running in the background and not currently in the foreground.
-*Foreground* : While not always explicitly mentioned as a status, a job in the foreground is actively running and has control over the terminal.
+- *Running* : This status indicates that a job is currently actively running in the foreground or background.
+- *Stopped* : A job might be stopped if it was suspended, usually by pressing Ctrl+Z. A stopped job is one that has been paused and is not currently executing.
+- *Exited* : When a job completes its execution, it will have an "Exited" status. This means that the process associated with the job has finished running.
+- *Terminated* : A job might have a "Terminated" status if it was forcefully terminated, usually by sending a termination signal (like Ctrl+C).
+- *Background* : This status indicates that a job is running in the background and not currently in the foreground.
+- *Foreground* : While not always explicitly mentioned as a status, a job in the foreground is actively running and has control over the terminal.
