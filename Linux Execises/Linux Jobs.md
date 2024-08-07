@@ -11,8 +11,7 @@ Use the jobs command to view all the jobs running in the background.
 
 After 200 seconds, the job above this job will no longer be in the running status.
 You can send a running job from the foreground to the background with **Ctrl+z**.
-- `sleep 50`
-# now enter Ctrl+z
+- `sleep 50` #now enter Ctrl+z
 
 Then view the jobs.
 - `jobs`
