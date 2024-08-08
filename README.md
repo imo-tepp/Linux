@@ -73,7 +73,7 @@ Whenever you create a repository, ALWAYS RUN THESE COMMANDS.
 - `git config --global user.email "email@domain.com` (set up git credentials)
 
 ## VIM
-Vim is a file editor for Linux, it has 2 modes: *Edit* and *Vi*
+Vim is a file editor for Linux, it has 2 modes: *Insert* and *Command*. Command mode takes in command and execute actions where insert takes in input and displays them in vim.
 - `vi <filename>`: Create or open a file to edit.
 - Tap *I* in Vi to enter the Insert mode to edit the file.
 - `:set number`: displays the line number 
@@ -87,6 +87,15 @@ You can use Substitiue command to search and replace words within the text files
 - *pattern* is for the word that you want to replace
 - *replace* what you want to replace the pattern with
 - *g* : apply globally , so all the words will be replaced
+
+### Vim Commands
+- `:wq`: Save and Quit
+- `:w` : Save
+- `:q` : Quit
+- `:w fname`: Save as fname
+- `ZZ` : Save and Quit
+- `:q!`: Quit discarding changes made
+- `:w!`: Save(and write to non-writable file)
 
 ## Linux Processes
 There are different types of process that runs on linux, for example:
