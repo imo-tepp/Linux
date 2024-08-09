@@ -22,7 +22,40 @@ Use the next command to check the metadata for the file:
 You can also run out of inodes, use the next command to check how many you have used:
 - `df -i`
 
+## Network
+### Network Diagnostic Tools
+#### Ping
+Ping command uses the ICMP(Internet Control Message Protocol) to test the connection between the computer and another host. For example:
+- `ping 8.8.8.8`: This will ping the Google DNS Server continously unless interrupted by *Ctrl + C*
+- `ping -c 3 8.8.8.8`: The `-c` defines how mnay times should the ping be send, in this case, 3 times.
 
+#### nslookup 
+nslookup is used to query the DNS to obtain the domain name or IP address mapping. 
+- `nslookup google.com`: This command looks up the IP address of google.
+- `nslookup 8.8.8.8`: This command looks up the domain name.
+
+#### traceroute
+Do `sudo apt install traceroute` if you don't have the packagte installed.
+- `traceroute google.com`: traces the path that the packets take to reach the networkhost.
+
+#### dig 
+Dig stands for *Domain Information groper* and is used to provide detailed information about DNS records.
+
+```
+dig google.com
+# can also query specific DNS record types, like A, MX, TXT, etc
+dig google.com A
+dig google.com MX
+dig -x 8.8.8.8 # reverse DNS lookup
+```
+#### curl
+curl is used to transfer date to or from a server and support various protocols like HTTP, HTTPS, FTP etc. See below for some examples:
+- `curl https://google.com`: this retrieves the basic HTML layout from google
+- `curl -o index.html https://google.com` : same as the above, except it outputs the result into a file.
+- `curl -L -o redirected.html https://google.com`: Follow the redirects and output the result into a file.
+- `curl -X POST -d 'username=user&password=pass' https://google.com/login -f`: Send POST data to google, the -f is to end the process if a http error occurs.
+- ``` curl -H "Authorization: Bearer token" https://api.google.com/data
+      curl -b "cookie1=value1; cookie2=value2" https:google.com ```
 
 ## Linux Exercise 
 
