@@ -54,9 +54,10 @@ curl is used to transfer date to or from a server and support various protocols 
 - `curl -o index.html https://google.com` : same as the above, except it outputs the result into a file.
 - `curl -L -o redirected.html https://google.com`: Follow the redirects and output the result into a file.
 - `curl -X POST -d 'username=user&password=pass' https://google.com/login -f`: Send POST data to google, the -f is to end the process if a http error occurs.
-- ``` 
+``` 
 curl -H "Authorization: Bearer token" https://api.google.com/data
-curl -b "cookie1=value1; cookie2=value2" https:google.com ```
+curl -b "cookie1=value1; cookie2=value2" https:google.com 
+```
 
 ## Linux Exercise 
 
