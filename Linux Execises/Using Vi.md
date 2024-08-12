@@ -84,4 +84,4 @@ cd ~
 
 7) Rename your file to *.log* and save it in the directory specified by the instructor
 Run the following command on the local computer with git bash.
-- `scp -i "Keypair.pem" ubuntu@ec2-16-171-129-65.eu-north-1.compute.amazonaws.com/home/ubuntu/newOrders.log .`
+- `scp -i "Keypair.pem" ubuntu@ec2-16-171-129-65.eu-north-1.compute.amazonaws.com:/home/ubuntu/newOrders.log .`
